@@ -455,3 +455,240 @@ Stack trace:
 REQUEST_URI=/index.php/users/reg
 in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
 in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 15:45:50 [error] [php] include(Reg.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(39): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/reg
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 15:45:59 [error] [php] include(Reg.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(39): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/reg
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 15:46:26 [error] [php] include(Reg.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(39): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/reg
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 15:46:50 [error] [php] include(forms.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(39): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/reg
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 16:29:56 [error] [exception.CException] exception 'CException' with message 'FormReg and its behaviors do not have a method or closure named "getTableSchema".' in D:\OpenServer\domains\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\validators\CUniqueValidator.php(96): CComponent->__call('getTableSchema', Array)
+#1 D:\OpenServer\domains\yii\framework\validators\CUniqueValidator.php(96): FormReg->getTableSchema()
+#2 D:\OpenServer\domains\yii\framework\validators\CValidator.php(201): CUniqueValidator->validateAttribute(Object(FormReg), 'login')
+#3 D:\OpenServer\domains\yii\framework\base\CModel.php(159): CValidator->validate(Object(FormReg), NULL)
+#4 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(53): CModel->validate()
+#5 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#10 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#11 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/users/reg
+HTTP_REFERER=http://yii1.rim/index.php/users/reg
+---
+2015/07/06 16:30:20 [error] [exception.CException] exception 'CException' with message 'FormReg and its behaviors do not have a method or closure named "getTableSchema".' in D:\OpenServer\domains\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\validators\CUniqueValidator.php(96): CComponent->__call('getTableSchema', Array)
+#1 D:\OpenServer\domains\yii\framework\validators\CUniqueValidator.php(96): FormReg->getTableSchema()
+#2 D:\OpenServer\domains\yii\framework\validators\CValidator.php(201): CUniqueValidator->validateAttribute(Object(FormReg), 'login')
+#3 D:\OpenServer\domains\yii\framework\base\CModel.php(159): CValidator->validate(Object(FormReg), NULL)
+#4 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(53): CModel->validate()
+#5 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#10 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#11 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/users/reg
+HTTP_REFERER=http://yii1.rim/index.php/users/reg
+---
+2015/07/06 16:30:43 [error] [exception.CException] exception 'CException' with message 'FormReg and its behaviors do not have a method or closure named "getTableSchema".' in D:\OpenServer\domains\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\validators\CUniqueValidator.php(96): CComponent->__call('getTableSchema', Array)
+#1 D:\OpenServer\domains\yii\framework\validators\CUniqueValidator.php(96): FormReg->getTableSchema()
+#2 D:\OpenServer\domains\yii\framework\validators\CValidator.php(201): CUniqueValidator->validateAttribute(Object(FormReg), 'login')
+#3 D:\OpenServer\domains\yii\framework\base\CModel.php(159): CValidator->validate(Object(FormReg), NULL)
+#4 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(53): CModel->validate()
+#5 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#10 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#11 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/users/reg
+HTTP_REFERER=http://yii1.rim/index.php/users/reg
+---
+2015/07/06 16:44:37 [error] [php] include(Users.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(5): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/index
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (5)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 16:44:58 [error] [php] include(Users.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(5): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/index
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (5)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 16:47:37 [error] [php] include(tblUser.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(11): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/index
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (11)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 16:48:03 [error] [php] include(tblUser.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(11): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/index
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (11)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 17:00:45 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set('login', 'a')
+#1 D:\OpenServer\domains\yii\framework\db\schema\CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(1474): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(11): CActiveRecord->findAll(Array)
+#4 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#5 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/index')
+#10 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/users/index
+---
+2015/07/06 17:00:54 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set('login', 'a')
+#1 D:\OpenServer\domains\yii\framework\db\schema\CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(1474): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(11): CActiveRecord->findAll(Array, Array)
+#4 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#5 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/index')
+#10 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/users/index
+---
+2015/07/06 17:01:54 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.0" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set('0', 'login = :Login')
+#1 D:\OpenServer\domains\yii\framework\db\schema\CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(1474): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(11): CActiveRecord->findAll(Array, Array)
+#4 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#5 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/index')
+#10 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/users/index
+---
+2015/07/06 17:02:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set('login', ':Login')
+#1 D:\OpenServer\domains\yii\framework\db\schema\CDbCommandBuilder.php(588): CDbCriteria->__construct(Array)
+#2 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(1474): CDbCommandBuilder->createCriteria(Array, Array)
+#3 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(11): CActiveRecord->findAll(Array, Array)
+#4 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionIndex()
+#5 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/index')
+#10 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/users/index
+---

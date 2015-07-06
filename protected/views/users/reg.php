@@ -28,13 +28,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->textField($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'cpassword'); ?>
-		<?php echo $form->textField($model,'password'); ?>
+		<?php echo $form->passwordField($model,'cpassword'); ?>
 		<?php echo $form->error($model,'cpassword'); ?>
 	</div>
 

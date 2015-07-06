@@ -2,25 +2,17 @@
 
 class UsersController extends Controller {
 	public function actionIndex() {
-		$model = new Users;
+		$data = [];
 
-		// uncomment the following code to enable ajax-based validation
-		/*
-		if(isset($_POST['ajax']) && $_POST['ajax']==='users-index-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-		//*/
+		$condition = 'login = :Login AND email = :EMail';
+		$params = [
+			':Login' => 'a',
+			':EMail' => 'a@a.a',
+		];
 
-		if (isset($_POST['Users'])) {
-			$model->attributes = $_POST['Users'];
-			//if ($model->validate()) {
-			// form inputs are valid, do something here
-			return;
-			//}
-		}
-		$this->render('index', array('model' => $model));
+		$data['users'] = tblUsers::model()->findAll($condition, $params);
+
+		$this->render('index', $data);
 	}
 
 	public function actionDelete() {
@@ -36,7 +28,7 @@ class UsersController extends Controller {
 	}
 
 	public function actionReg() {
-		$model = new Reg;
+		$model = new FormReg;
 
 		// uncomment the following code to enable ajax-based validation
 		/*
@@ -47,15 +39,23 @@ class UsersController extends Controller {
 		}
 		*/
 
-		/*
-		if (isset($_POST['Users'])) {
-			$model->attributes = $_POST['Users'];
+		//*
+		if (isset($_POST['FormReg'])) {
+			$model->attributes = $_POST['FormReg'];
 			if ($model->validate()) {
-				// form inputs are valid, do something here
-				return;
+				//добавить данные в БД
+				print "Добавить пользователя в БД...";
+				$oUsers = new tblUsers;
+				$oUsers->login = $model->login;
+				$oUsers->password = $model->password;
+				$oUsers->email = $model->email;
+				if ($oUsers->save()) {
+					$id = $oUsers->id;
+					print "id = $id<BR>\n";
+				}
 			}
 		}
-		*/
+		//*/
 		$this->render('reg', array('model' => $model));
 	}
 
