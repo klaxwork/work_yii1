@@ -1,0 +1,457 @@
+2015/07/06 11:41:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'yii1.rim'' in D:\OpenServer\domains\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OpenServer\domains\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OpenServer\domains\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(472): CModule->getComponent('db')
+#4 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 D:\OpenServer\domains\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 D:\OpenServer\domains\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 D:\OpenServer\domains\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#12 D:\OpenServer\domains\yii\framework\yiic.php(33): CApplication->run()
+#13 D:\OpenServer\domains\Yii1.rim\protected\yiic.php(7): require_once('D:\\OpenServer\\d...')
+#14 {main}
+---
+2015/07/06 11:42:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'yii1.rim'' in D:\OpenServer\domains\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OpenServer\domains\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OpenServer\domains\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(472): CModule->getComponent('db')
+#4 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 D:\OpenServer\domains\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 D:\OpenServer\domains\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 D:\OpenServer\domains\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#12 D:\OpenServer\domains\yii\framework\yiic.php(33): CApplication->run()
+#13 D:\OpenServer\domains\Yii1.rim\protected\yiic.php(7): require_once('D:\\OpenServer\\d...')
+#14 {main}
+---
+2015/07/06 11:42:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2015/07/06 11:43:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'yii1'' in D:\OpenServer\domains\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\OpenServer\domains\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\OpenServer\domains\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(472): CModule->getComponent('db')
+#4 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 D:\OpenServer\domains\yii\framework\cli\commands\MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 D:\OpenServer\domains\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 D:\OpenServer\domains\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 D:\OpenServer\domains\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CConsoleApplication->processRequest()
+#12 D:\OpenServer\domains\yii\framework\yiic.php(33): CApplication->run()
+#13 D:\OpenServer\domains\Yii1.rim\protected\yiic.php(7): require_once('D:\\OpenServer\\d...')
+#14 {main}
+---
+2015/07/06 11:44:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii1.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2015/07/06 11:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users')
+#3 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/users
+HTTP_REFERER=http://yii1.rim/index.php/gii/controller/index
+---
+2015/07/06 11:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "add".' in D:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('add')
+#1 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('add')
+#2 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/add')
+#3 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/users/add
+---
+2015/07/06 11:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in D:\OpenServer\domains\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\CController.php(270): CController->missingAction('register')
+#1 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#2 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/register')
+#3 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/users/register
+---
+2015/07/06 13:11:03 [error] [exception.CException] exception 'CException' with message 'Property "Users.cpassword" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('cpassword')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('cpassword')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Users), 'cpassword')
+#3 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Users), 'cpassword', Array)
+#4 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Users), 'cpassword', Array)
+#5 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(36): CActiveForm->textField(Object(Users), 'cpassword')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#7 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#9 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#10 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('reg', Array)
+#11 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#16 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#17 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 13:14:01 [error] [exception.CException] exception 'CException' with message 'Property "Users.cpassword" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('cpassword')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('cpassword')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Users), 'cpassword')
+#3 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Users), 'cpassword', Array)
+#4 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Users), 'cpassword', Array)
+#5 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(36): CActiveForm->textField(Object(Users), 'cpassword')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#7 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#9 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#10 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('reg', Array)
+#11 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#16 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#17 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 13:16:39 [error] [exception.CException] exception 'CException' with message 'Property "Users.cpassword" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('cpassword')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('cpassword')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Users), 'cpassword')
+#3 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Users), 'cpassword', Array)
+#4 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Users), 'cpassword', Array)
+#5 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(36): CActiveForm->textField(Object(Users), 'cpassword')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#7 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#9 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#10 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('reg', Array)
+#11 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#16 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#17 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 13:18:48 [error] [exception.CException] exception 'CException' with message 'Property "Users.username" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('username')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Users), 'username')
+#3 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Users), 'username', Array)
+#4 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Users), 'username', Array)
+#5 D:\OpenServer\domains\Yii1.rim\protected\views\site\login.php(29): CActiveForm->textField(Object(Users), 'username')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#7 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#9 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#10 D:\OpenServer\domains\Yii1.rim\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#11 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#16 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#17 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://yii1.rim/index.php
+---
+2015/07/06 13:57:11 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 13:58:32 [error] [exception.CException] exception 'CException' with message 'UsersController cannot find the requested view "users/RegForm".' in D:\OpenServer\domains\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('users/RegForm', Array, true)
+#1 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('users/RegForm', Array)
+#2 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#7 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#8 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 13:58:38 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\RegForm.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('RegForm', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('RegForm', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:00:02 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:00:04 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(57): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:02:38 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(59): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:04:08 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(59): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:04:16 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(59): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:04:27 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(59): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:05:04 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.login" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('login')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'login')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'login', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'login', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(24): CActiveForm->textField(Object(RegForm), 'login')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(59): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:08:10 [error] [exception.CException] exception 'CException' with message 'Property "RegForm.email" is not defined.' in D:\OpenServer\domains\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2728): CComponent->__get('email')
+#1 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(RegForm), 'email')
+#2 D:\OpenServer\domains\yii\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(RegForm), 'email', Array)
+#3 D:\OpenServer\domains\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(RegForm), 'email', Array)
+#4 D:\OpenServer\domains\Yii1.rim\protected\views\users\reg.php(42): CActiveForm->textField(Object(RegForm), 'email')
+#5 D:\OpenServer\domains\yii\framework\web\CBaseController.php(126): require('D:\\OpenServer\\d...')
+#6 D:\OpenServer\domains\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\OpenServer\\d...', Array, true)
+#7 D:\OpenServer\domains\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\OpenServer\\d...', Array, true)
+#8 D:\OpenServer\domains\yii\framework\web\CController.php(782): CController->renderPartial('reg', Array, true)
+#9 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(59): CController->render('reg', Array)
+#10 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#11 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\OpenServer\domains\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\OpenServer\domains\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): CController->run('reg')
+#15 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/reg')
+#16 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/users/reg
+---
+2015/07/06 14:26:34 [error] [php] include(forms.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(39): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/reg
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
+2015/07/06 14:26:39 [error] [php] include(Reg.php): failed to open stream: No such file or directory (D:\OpenServer\domains\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php(39): spl_autoload_call()
+#1 D:\OpenServer\domains\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionReg()
+#2 D:\OpenServer\domains\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\OpenServer\domains\yii\framework\web\CController.php(286): UsersController->runAction()
+#4 D:\OpenServer\domains\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#5 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#6 D:\OpenServer\domains\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\OpenServer\domains\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\OpenServer\domains\Yii1.rim\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/users/reg
+in D:\OpenServer\domains\Yii1.rim\protected\controllers\UsersController.php (39)
+in D:\OpenServer\domains\Yii1.rim\index.php (13)
