@@ -692,3 +692,57 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/index.php/users/index
 ---
+2015/07/07 12:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\OpenServer\domains\Yii1.rim\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://yii1.rim/site/contact
+---
+2015/07/07 12:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\OpenServer\domains\Yii1.rim\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://yii1.rim/site/contact
+---
+2015/07/07 12:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e3623e14/jquery.yiiactiveform.js".' in D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/e3623e14...')
+#1 D:\OpenServer\domains\Yii1.rim\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/e3623e14/jquery.yiiactiveform.js
+HTTP_REFERER=http://yii1.rim/site/contact
+---
+2015/07/07 12:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\OpenServer\domains\Yii1.rim\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://yii1.rim/site/contact
+---
+2015/07/07 12:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e3623e14/jquery.js".' in D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/e3623e14...')
+#1 D:\OpenServer\domains\Yii1.rim\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/e3623e14/jquery.js
+HTTP_REFERER=http://yii1.rim/site/contact
+---
+2015/07/07 12:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\OpenServer\domains\Yii1.rim\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\OpenServer\domains\Yii1.rim\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\Yii1.rim\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://yii1.rim/site/contact
+---
